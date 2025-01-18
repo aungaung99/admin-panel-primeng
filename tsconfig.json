@@ -3,6 +3,21 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@core_models/*": [
+        "src/app/core/models/*"
+      ],
+      "@core_services/*": [
+        "src/app/core/services/*"
+      ],
+      "@shared_component/*": [
+        "src/app/shared/services/*"
+      ],
+      "@shared_services/*": [
+        "src/app/shared/services/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

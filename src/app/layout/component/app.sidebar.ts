@@ -13,16 +13,16 @@ import { AppMenu } from './app.menu';
 
       ::-webkit-scrollbar-track {
         background: var(--scroll-bg-color);
-        height: 16px;
       }
 
       ::-webkit-scrollbar-thumb {
         background: var(--scroll-bar-color);
+        height: 16px;
         border-radius: 10px;
       }
 
       ::-webkit-scrollbar-thumb:hover {
-        background: #555;
+        background: var(--p-surface-500);
       }`
   ],
   template: ` <div class="layout-sidebar">

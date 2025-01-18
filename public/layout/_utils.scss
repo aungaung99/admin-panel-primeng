@@ -10,10 +10,20 @@
     padding: 2rem;
     margin-bottom: 2rem;
     border-radius: var(--content-border-radius);
+    border: 1px solid var(--surface-border);
 
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+@media (max-width: 991px) {
+  .card{
+    border-radius: 0px;
+    border: none;
+    border-top: 1px solid var(--surface-border);
+    border-bottom: 1px solid var(--surface-border);
+  }
 }
 
 .p-toast {

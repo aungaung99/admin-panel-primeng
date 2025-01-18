@@ -11,3 +11,9 @@
     flex: 1 1 auto;
     padding-bottom: 2rem;
 }
+
+@media (max-width: 991px) {
+  .layout-main-container{
+    padding: 4rem 0rem 0 0rem;
+  }
+}
