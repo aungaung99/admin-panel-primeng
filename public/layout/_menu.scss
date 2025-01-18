@@ -11,7 +11,7 @@
     transition:
         transform var(--layout-section-transition-duration),
         left var(--layout-section-transition-duration);
-    background-color: var(--surface-overlay);
+    background-color: transparent;
     padding: 0.5rem 1.5rem;
 }
 
