@@ -6,7 +6,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     color: var(--text-color);
-    background-color: var(--surface-ground);
+    background: radial-gradient(circle farthest-corner at left center, var(--gradient-start) 30%, var(--gradient-middle) 40%, var(--gradient-end) 60%);
     margin: 0;
     padding: 0;
     min-height: 100%;
