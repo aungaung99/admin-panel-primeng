@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { StyleClassModule } from 'primeng/styleclass';
 import { LayoutService } from '../service/layout.service';
 import { BreadCrumbComponent } from "../../shared/bread-crumb/bread-crumb.component";
+import { AppConfigurator } from "./app.configurator";
 
 @Component({
   selector: 'app-topbar',
   standalone: true,
-  imports: [RouterModule, CommonModule, StyleClassModule, BreadCrumbComponent],
+  imports: [RouterModule, CommonModule, StyleClassModule, BreadCrumbComponent, AppConfigurator],
   template: ` <div class="layout-topbar">
         <div class="layout-topbar-logo-container">
             <button class="layout-menu-button layout-topbar-action" (click)="layoutService.onMenuToggle()">
@@ -44,7 +45,7 @@ import { BreadCrumbComponent } from "../../shared/bread-crumb/bread-crumb.compon
                 <button type="button" class="layout-topbar-action" (click)="toggleDarkMode()">
                     <i [ngClass]="{ 'pi ': true, 'pi-moon': layoutService.isDarkTheme(), 'pi-sun': !layoutService.isDarkTheme() }"></i>
                 </button>
-                <!-- <div class="relative">
+                <!-- <div class="">
                     <button
                         class="layout-topbar-action layout-topbar-action-highlight"
                         pStyleClass="@next"
@@ -52,12 +53,12 @@ import { BreadCrumbComponent } from "../../shared/bread-crumb/bread-crumb.compon
                         enterActiveClass="animate-scalein"
                         leaveToClass="hidden"
                         leaveActiveClass="animate-fadeout"
-                        [hideOnOutsideClick]="true"
-                    >
+                        [hideOnOutsideClick]="true">
                         <i class="pi pi-palette"></i>
                     </button>
-                    <app-configurator />
                 </div> -->
+                <app-configurator />
+
             </div>
 
             <button class="layout-topbar-menu-button layout-topbar-action" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveToClass="hidden" leaveActiveClass="animate-fadeout" [hideOnOutsideClick]="true">

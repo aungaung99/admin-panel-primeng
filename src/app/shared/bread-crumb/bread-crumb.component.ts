@@ -8,7 +8,12 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
   selector: 'app-bread-crumb',
   standalone: true,
   imports: [BreadcrumbModule],
-  template: `<p-breadcrumb [home]="home" [model]="menuItems" class="bg-transparent bg-gray-500"></p-breadcrumb>`
+  template: `<p-breadcrumb [home]="home" [model]="menuItems"></p-breadcrumb>`,
+  styles: [`
+    ::ng-deep .p-breadcrumb {
+      background: transparent !important;
+    }
+  `]
 })
 export class BreadCrumbComponent {
   static readonly ROUTE_DATA_BREADCRUMB = 'breadcrumb';
